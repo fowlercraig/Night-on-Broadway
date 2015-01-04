@@ -1,0 +1,46 @@
+{
+  "name": "pegasus",
+  "version": "0.1.7",
+  "homepage": "https://github.com/typicode/pegasus",
+  "authors": [
+    "Typicode <typicode@gmail.com>"
+  ],
+  "description": "Mini xhr + promise. Display data faster in single page apps (jQuery, Backbone, Angular...).",
+  "main": "dist/pegasus.js",
+  "keywords": [
+    "ajax",
+    "promise",
+    "xhr",
+    "http",
+    "request",
+    "XMLHttpRequest",
+    "data",
+    "json",
+    "bootstrap",
+    "performance",
+    "optimization",
+    "load",
+    "loader",
+    "preload",
+    "preloader"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "gruntfile.js",
+    "package.json"
+  ],
+  "_release": "0.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.7",
+    "commit": "4d66b0917765fe8c0e69ac0ba57a052a220e9566"
+  },
+  "_source": "git://github.com/typicode/pegasus.git",
+  "_target": "~0.1.7",
+  "_originalSource": "pegasus",
+  "_direct": true
+}
