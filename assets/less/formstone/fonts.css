@@ -3,6 +3,18 @@
 -------------------------------------------*/
 
 	@font-face {
+    font-family: 'Brandon';
+    src: url('/assets/fonts/Brandon_med.eot');
+    src: url('/assets/fonts/Brandon_med.eot') format('embedded-opentype'),
+         url('/assets/fonts/Brandon_med.woff2') format('woff2'),
+         url('/assets/fonts/Brandon_med.woff') format('woff'),
+         url('/assets/fonts/Brandon_med.ttf') format('truetype'),
+         url('/assets/fonts/Brandon_med.svg#Brandon_med') format('svg');
+    font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
 	  font-family: 'Brandon';
 	  src: url('/assets/fonts/Brandon_bld.eot');
 	  src: url('/assets/fonts/Brandon_bld.eot') format('embedded-opentype'),
@@ -10,7 +22,7 @@
 	       url('/assets/fonts/Brandon_bld.woff') format('woff'),
 	       url('/assets/fonts/Brandon_bld.ttf') format('truetype'),
 	       url('/assets/fonts/Brandon_bld.svg#Brandon_bld') format('svg');
-		font-weight: normal;
+		font-weight: bold;
 		font-style: normal;
 	}
 
