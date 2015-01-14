@@ -1,0 +1,39 @@
+#activity-blocks  {
+
+  .activity {
+
+    overflow: hidden;
+    background-color: @bgGray;
+    position: relative;
+    margin-bottom: @gutter*2;
+    height: 350px;
+    background-size: cover;
+
+    @media @tabletC {
+      height: 200px;
+    }
+
+    @media @desktopC {
+      height: 300px;
+    }
+
+    .cover {
+      display: block;
+      position: absolute;
+      .cover();
+    }
+
+    .meta {
+
+      position: absolute;
+      .cover();
+
+    }
+
+    .structure {
+      visibility: hidden;
+    }
+
+  }
+
+}

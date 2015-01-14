@@ -23,8 +23,8 @@
 
 <header id="head">
   <nav class="row">
-    <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-8 tablet-6 mobile-3','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
-
+    <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-9 tablet-6 mobile-3','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
+    <div class="desktop-3 social"><a href="/">#nightonbroadway</a></div>
   </nav>
 </header>
 

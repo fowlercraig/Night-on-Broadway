@@ -2,6 +2,19 @@
   Fonts
 -------------------------------------------*/
 
+	@font-face {
+	  font-family: 'Brandon';
+	  src: url('/assets/fonts/Brandon_bld.eot');
+	  src: url('/assets/fonts/Brandon_bld.eot') format('embedded-opentype'),
+	       url('/assets/fonts/Brandon_bld.woff2') format('woff2'),
+	       url('/assets/fonts/Brandon_bld.woff') format('woff'),
+	       url('/assets/fonts/Brandon_bld.ttf') format('truetype'),
+	       url('/assets/fonts/Brandon_bld.svg#Brandon_bld') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+
 	/* PT Mono */
 	@font-face {
 	    font-family: 'PTMono';
