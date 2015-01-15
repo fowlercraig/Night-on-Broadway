@@ -63,3 +63,31 @@
   }
 
 }
+
+.event-popup {
+
+  max-width: 600px;
+  margin: auto;
+
+  .more-info-window {
+
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px @black25;
+
+    .lower {
+      padding: @gutter*2;
+      background: @white;
+      p {
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+
+}

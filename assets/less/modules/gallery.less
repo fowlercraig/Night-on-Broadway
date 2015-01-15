@@ -2,7 +2,30 @@
 
   figure {
 
-    margin-bottom: @gutter*2
+    margin-bottom: @gutter*2;
+    position: relative;
+    overflow: hidden;
+
+    figcaption {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 @gutter*2;
+      color: @white;
+      transition: 300ms ease;
+      width: 100%;
+    }
+
+    &:hover {
+      figcaption {
+        background: @black75;
+        bottom: 0;
+        height: 40px;
+       line-height: 40px;
+      }
+    }
     
   }
 

@@ -3,7 +3,9 @@
 // check if the flexible content field has rows of data
 if( have_rows('events') ):
 
-    echo '<div id="events-grid" class="row"><div class="desktop-8 tablet-6 mobile-3 grid padded"><div class="row">';
+    $location_counter = 1; 
+
+    echo '<div id="events-grid" class="row">';
 
     while ( have_rows('events') ) : the_row();
 
@@ -21,9 +23,11 @@ if( have_rows('events') ):
 
         endif;
 
+        $location_counter++;
+
     endwhile;
 
-    echo '</div></div></div>';
+    echo '</div>';
 
 endif;
 

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.pswp').appendTo('body'); 
+
   // Parallax Headers
 
   $window = $(window);
@@ -13,7 +15,27 @@ $(document).ready(function() {
     });
   }); 
 
-  
+  // Modals
+
+  $('.popup').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-fade',
+    //focus: '#name',
+
+    // When elemened is focused, some mobile browsers in some cases zoom in
+    // It looks not nice, so we disable it:
+    // callbacks: {
+    //   beforeOpen: function() {
+    //     if($(window).width() < 700) {
+    //       this.st.focus = false;
+    //     } else {
+    //       this.st.focus = '#name';
+    //     }
+    //   }
+    // }
+  });
 
   // Isotope
 

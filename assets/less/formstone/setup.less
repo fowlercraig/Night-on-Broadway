@@ -152,6 +152,32 @@
 		border-radius: 50%;
 	}
 
+	.border-right() {
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 1px;
+			right: 0;
+			background: @white;
+			z-index: 6;
+		}
+	}
+
+	.border-left() {
+		&:before {
+			position: absolute;
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 1px;
+			left: 0;
+			display: block;
+			background-color: @white;
+		}
+	}
+
 	// Fonts
 
 	.lato() {

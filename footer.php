@@ -13,8 +13,7 @@
 </div><!-- Wrapper -->
 
 <?php wp_footer(); ?>
-<script src="//use.typekit.net/qei6uai.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<?php include locate_template('/lib/photoswipe.php' );?>
 
 </body>
 </html>
