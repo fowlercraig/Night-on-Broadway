@@ -20,23 +20,44 @@
         <?php if( have_rows('location_events') ): $event_counter = 1; while ( have_rows('location_events') ) : the_row(); ?>
         <div class="event">
 
+          <?php 
+
+            if( get_sub_field('recurring_act') ) {
+
+              $uniqueID = get_sub_field('event_identfier');
+
+            } else {
+
+              $uniqueID = $event_counter;
+
+            }
+
+          ?>
+
           <div class="row">
             <div class="desktop-12 tablet-2 mobile-3 contained">
-              <span class="event_time">TK-TKpm — </span>
+              <?php if( get_sub_field('event_start_time') ) { ?>
+              <span class="event_time"><?php the_sub_field('event_start_time')?>-<?php the_sub_field('event_end_time')?> — </span>
+              <?php } ?>
               <span class="title"><?php the_sub_field('event_name'); ?></span>
-              <a href="#location_<?php echo $location_counter; ?>_event_<?php echo $event_counter; ?>" class="popup">| More Info</a>
+              <a href="#location_<?php echo $location_counter; ?>_event_<?php echo $uniqueID; ?>" class="popup right">More Info</a>
             </div>
           </div>
 
-          <div id="location_<?php echo $location_counter; ?>_event_<?php echo $event_counter; ?>" class="mfp-hide white-popup-block event-popup">
+          <div id="location_<?php echo $location_counter; ?>_event_<?php echo $uniqueID; ?>" class="mfp-hide white-popup-block event-popup">
             <div class="more-info-window">
               <div class="mfp-close"></div>
-              <div class="upper"><img src="http://i.imgur.com/N7cvBcd.jpg" class="img-responsive" /></div>
+              <?php 
+                $image = get_sub_field('event_image');
+              ?>
+              <div class="upper"><?php if( !empty($image) ): ?><img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive" /><?php endif; ?></div>
               <div class="lower">
                 <span class="title"><?php the_sub_field('event_name'); ?></span><br>
-                <span class="event_time">TK-TKpm at The Globe</span>
+                <?php if( get_sub_field('event_start_time') ) { ?>
+                <span class="event_time"><?php the_sub_field('event_start_time')?>-<?php the_sub_field('event_end_time')?></span>
+                <?php } ?>
                 <?php the_sub_field('event_description'); ?>
-                <a href="#">More info</a>
+                <?php if( get_sub_field('event_url') ) { ?><a href="<?php the_sub_field('event_url'); ?>">More info</a><?php } ?>
               </div>
             </div>
           </div>
