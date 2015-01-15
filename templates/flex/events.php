@@ -21,10 +21,10 @@
         <div class="event">
 
           <div class="row">
-            <div class="desktop-9 tablet-2 mobile-3">
-              <span class="event_time">4-6pm</span>
+            <div class="desktop-12 tablet-2 mobile-3 contained">
+              <span class="event_time">TK-TKpm — </span>
               <span class="title"><?php the_sub_field('event_name'); ?></span>
-              <a href="#">More Info</a>
+              <a href="#">| More Info</a>
             </div>
           </div>
 

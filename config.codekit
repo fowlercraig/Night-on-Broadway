@@ -2702,14 +2702,25 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/orpheum.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12890,
+		"inputAbbreviatedPath": "\/assets\/img\/orpheum.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/orpheum.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/javascripts\/_main.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/javascripts\/_main.js",
-		"outputAbbreviatedPath": "\/assets\/javascripts\/scripts.min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/_main-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -7605,7 +7616,7 @@
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,
-	"animateCSSInjections": 0,
+	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoSyncProjectSettingsFile": 1,

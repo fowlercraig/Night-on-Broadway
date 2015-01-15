@@ -13,9 +13,7 @@
   <div class="meta text-center">
     <div class="row">
       <div class="desktop-6 tablet-6 mobile-3 centered">
-        <h3 class="title"><?php the_title(); ?></h3>
-        <?php the_excerpt(); ?>
-        
+        <h3 class="title"><?php the_title(); ?></h3>        
         <a href="<?php the_permalink(); ?>" class="button">Check It</a>
       </div>
     </div>

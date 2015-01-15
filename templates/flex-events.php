@@ -3,7 +3,7 @@
 // check if the flexible content field has rows of data
 if( have_rows('events') ):
 
-    echo '<div id="events-grid" class="row"><div class="desktop-10"><div class="row">';
+    echo '<div id="events-grid" class="row"><div class="desktop-8 tablet-6 mobile-3 grid padded"><div class="row">';
 
     while ( have_rows('events') ) : the_row();
 
