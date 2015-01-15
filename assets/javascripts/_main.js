@@ -10,7 +10,10 @@
 // Other Plugins
 
 // @codekit-prepend "../bower_components/royalslider/jquery.royalslider.min.js"; 
+// @codekit-prepend "../bower_components/isotope/dist/isotope.pkgd.min.js"; 
+// @codekit-prepend "../bower_components/isotope/packery.mode.js"; 
+// @codekit-prepend "../bower_components/imagesloaded/imagesloaded.pkgd.min.js"; 
 
 // My Shit
 
-// @codekit-prepend "_scripts.js"; 
+// @codekit-append "_scripts.js"; 

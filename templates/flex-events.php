@@ -1,14 +1,15 @@
 <?php
 
 // check if the flexible content field has rows of data
-if( have_rows('page_modules') ):
+if( have_rows('events') ):
 
-     // loop through the rows of data
-    while ( have_rows('page_modules') ) : the_row();
+    echo '<div id="events-grid" class="row"><div class="desktop-8"><div class="row">';
 
-        if( get_row_layout() == 'activity_blocks' ):
+    while ( have_rows('events') ) : the_row();
 
-          include('flex/home-blocks.php');
+        if( get_row_layout() == 'event_location' ):
+
+          include('flex/events.php');
 
         elseif( get_row_layout() == 'gallery_block' ):
 
@@ -21,6 +22,8 @@ if( have_rows('page_modules') ):
         endif;
 
     endwhile;
+
+    echo '</div></div></div>';
 
 endif;
 

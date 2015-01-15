@@ -4,10 +4,16 @@ body {
 
   &.main {
 
-    height: 3000px;
-    background: @darkblue url('/assets/img/bbb_bg.jpg') top center no-repeat;
+    background: @darkblue url('/assets/img/bbb_bg-dark.jpg') top center no-repeat;
     background-size: contain;
-    background-attachment: fixed;
+
+    &.page-homepage {
+
+      background: @darkblue url('/assets/img/bbb_bg.jpg') top center no-repeat;
+      background-size: contain;
+
+
+    }
 
   }
 
@@ -16,6 +22,14 @@ body {
 #content {
 
   padding-top: 50px;
+
+}
+
+
+#footer {
+
+  padding-bottom: 50px;
+  text-align: center;
 
 }
 

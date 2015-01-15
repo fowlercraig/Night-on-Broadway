@@ -17,7 +17,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body class="gridlock main" data-speed="1.75">
+<body <?php body_class('gridlock main'); ?> data-speed="1.75">
 
 <div id="wrapper">
 

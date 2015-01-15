@@ -1,0 +1,61 @@
+.location {
+
+  margin-bottom: @gutter*4;
+
+  .wrapper {
+
+    //border-right: 1px solid @white25;
+    padding: 15px 0;
+
+  }
+
+  .location-meta {
+
+    padding-top: @gutter;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: @gutter;
+
+    .title {
+      color: @gold;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .location-address {
+      color: @gold;
+      font-size: 12px;
+    }
+
+  }
+
+  .event {
+
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: @gutter 0;
+    .location-meta();
+    color: @white;
+    font-size: 13px;
+    margin-bottom: 0;
+
+    span, a { color: inherit; }
+
+    .title {
+
+      font-size: inherit;
+      margin: 0;
+      color: @white;
+
+    }
+
+  }
+
+}
+
+#events-grid {
+
+  //border-top: 1px solid @white25;
+  //border-left: 1px solid @white25;
+
+}
