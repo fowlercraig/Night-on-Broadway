@@ -10,6 +10,10 @@ if( have_rows('page_modules') ):
 
           include('flex/home-blocks.php');
 
+        elseif( get_row_layout() == 'partners_block' ):
+
+          include('flex/partners.php');
+
         elseif( get_row_layout() == 'gallery_block' ):
 
           include('flex/gallery.php');
