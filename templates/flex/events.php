@@ -6,7 +6,10 @@
       <div class="row">
 
         <div class="desktop-2">
-          <img src="/assets/img/orpheum.jpg" alt="" class="left img-responsive rounded"/>
+          <?php 
+            $location_image = get_sub_field('location_photo');
+          ?>
+          <?php if( !empty($location_image) ): ?><img src="<?php echo $location_image['sizes']['thumbnail']; ?>" class="left img-responsive rounded" /><?php endif; ?>
         </div>
 
         <div class="desktop-10">
@@ -53,9 +56,6 @@
               <div class="upper"><?php if( !empty($image) ): ?><img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive" /><?php endif; ?></div>
               <div class="lower">
                 <span class="title"><?php the_sub_field('event_name'); ?></span><br>
-                <?php if( get_sub_field('event_start_time') ) { ?>
-                <span class="event_time"><?php the_sub_field('event_start_time')?>-<?php the_sub_field('event_end_time')?></span>
-                <?php } ?>
                 <?php the_sub_field('event_description'); ?>
                 <?php if( get_sub_field('event_url') ) { ?><a href="<?php the_sub_field('event_url'); ?>">More info</a><?php } ?>
               </div>

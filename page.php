@@ -17,7 +17,12 @@
       get_template_part('templates/flex', 'events');
     echo '</main>';
     if(get_field('full_width')){ } else {
-      get_sidebar();
+      if(is_page('events')){
+        get_sidebar('events');
+      } else {
+        get_sidebar();
+      }
+
     }
   echo '</div>';
 

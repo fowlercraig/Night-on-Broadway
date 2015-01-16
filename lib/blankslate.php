@@ -40,6 +40,7 @@ return $title . esc_attr( get_bloginfo( 'name' ) );
 add_action( 'widgets_init', 'gridded_widgets_init' );
 function gridded_widgets_init()
 {
+  
 register_sidebar( array (
 'name' => __( 'Sidebar Widget Area', 'gridded' ),
 'id' => 'primary-widget-area',
@@ -48,6 +49,16 @@ register_sidebar( array (
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
+
+register_sidebar( array (
+'name' => __( 'Events', 'gridded' ),
+'id' => 'event-widget-area',
+'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+'after_widget' => "</li>",
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+
 }
 function gridded_custom_pings( $comment )
 {
@@ -84,3 +95,7 @@ remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_C
 add_action( 'widgets_init', 'removeRecentComments' );
 add_image_size( 'homepage-thumb', 400, 400, true );
 add_filter('show_admin_bar', '__return_false');
+
+
+add_image_size( 'gallery-thumb', 640, 480, true );
+add_image_size( 'gallery-full', 1024, 768, true );
