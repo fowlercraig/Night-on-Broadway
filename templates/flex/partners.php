@@ -4,7 +4,7 @@
 
 <?php foreach( $images as $image ): ?>
 
-  <a href="<?php echo $image['url']; ?>" class="partner <?php echo $image['caption']; ?> contained">
+  <a href="#" class="partner <?php echo $image['caption']; ?> contained">
     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
   </a>
 
