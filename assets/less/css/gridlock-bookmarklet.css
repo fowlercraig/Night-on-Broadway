@@ -30,6 +30,12 @@
 .rounded {
   border-radius: 50%;
 }
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
 /*-------------------------------------------
   Bookmarklet
 -------------------------------------------*/

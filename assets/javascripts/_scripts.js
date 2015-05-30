@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-  $('.pswp').appendTo('body'); 
+  $("#wrapper").fitVids();
+
+  $('.pswp').appendTo('body');
 
   // Parallax Headers
 
@@ -9,11 +11,11 @@ $(document).ready(function() {
   $('body.main').each(function(){
     var $bgobj = $(this);
     $(window).scroll(function() {
-      var yPos = ($window.scrollTop() / $bgobj.data('speed')); 
+      var yPos = ($window.scrollTop() / $bgobj.data('speed'));
       var coords = '50% '+ yPos + 'px';
       $bgobj.css({ backgroundPosition: coords });
     });
-  }); 
+  });
 
   // Modals
 
@@ -59,7 +61,7 @@ $(document).ready(function() {
   //     layoutMode:     'packery',
   //   });
 
-  // }); 
+  // });
 
 
 });
