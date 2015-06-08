@@ -7,6 +7,11 @@
   } else {
     $thumb_bg  = '';
   }
+  if (get_sub_field('button_text')){
+    $buttonText = get_sub_field('button_text');
+  } else {
+    $buttonText = 'Check It';
+  }
 ?>
 
 <div class="activity <?php the_sub_field('width'); ?> tablet-3 mobile-3" style="<?php echo $thumb_bg; ?>">
@@ -14,7 +19,7 @@
     <div class="row">
       <div class="desktop-8 tablet-6 mobile-3 centered">
         <h3 class="title"><?php the_title(); ?></h3>
-        <a href="<?php the_permalink(); ?>" class="button">Check It</a>
+        <a href="<?php the_permalink(); ?>" class="button"><?php echo $buttonText; ?></a>
       </div>
     </div>
   </div>
