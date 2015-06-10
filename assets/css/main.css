@@ -5501,10 +5501,6 @@ mfp-fade.mfp-bg {
 .pswp--zoomed-in .pswp__button--zoom {
   background-position: -132px 0;
 }
-.pswp--touch .pswp__button--arrow--left,
-.pswp--touch .pswp__button--arrow--right {
-  visibility: hidden;
-}
 .pswp__button--arrow--left,
 .pswp__button--arrow--right {
   background: none;
