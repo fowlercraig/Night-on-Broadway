@@ -1,12 +1,23 @@
 #head {
 
-  position: fixed;
-  left: 0;
-  width: 100%;
   z-index: 99;
   background: @darkblue;
   border-bottom: 1px solid rgba(255,255,255,.1);
   .brandon();
+
+  @media @mobile {
+    position: relative;
+  }
+
+  @media @tablet {
+    position: relative;
+  }
+
+  @media @desktop {
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
 
   @media @mobileC {
     position: relative;
@@ -17,6 +28,18 @@
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 2px;
+
+    .social {
+      @media @min {
+        text-align: left;
+      }
+      @media @tablet {
+        text-align: left;
+      }
+      @media @desktop {
+        text-align: right;
+      }
+    }
 
     @media @min {
 
@@ -65,23 +88,6 @@
         padding-left: 0;
         font-weight: bold;
 
-      }
-
-    }
-
-    .social {
-
-      @media @min {
-        display: none;
-      }
-
-      @media @desktop {
-        display: block;
-      }
-
-      a {
-
-        padding-right: 0;
       }
 
     }

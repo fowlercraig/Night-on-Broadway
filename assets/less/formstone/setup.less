@@ -200,3 +200,12 @@
 	.text-center {
 		text-align: center;
 	}
+
+	.show-mobile {
+		@media @mobile {
+			display: inline-block;
+		}
+		@media @desktop {
+			display: none;
+		}
+	}

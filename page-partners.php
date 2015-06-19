@@ -7,9 +7,9 @@
 <?php
 
   if(get_field('full_width')){
-    $pageWidth = 'desktop-12';
+    $pageWidth = 'desktop-12 tablet-6 mobile-3';
   } else {
-    $pageWidth = 'desktop-8';
+    $pageWidth = 'desktop-8 tablet-4 mobile-3';
   }
 
   echo '<div class="row">';

@@ -13,6 +13,14 @@
 
 </div><!-- Wrapper -->
 
+<div class="side-menu toggle">
+  <div class="side-wrapper">
+    <nav class="side-nav">
+      <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-9 tablet-6 mobile-3','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
+    </nav>
+  </div>
+</div>
+
 <?php wp_footer(); ?>
 <?php include locate_template('/lib/photoswipe.php' );?>
 

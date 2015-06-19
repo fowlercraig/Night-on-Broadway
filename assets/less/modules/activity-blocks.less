@@ -14,11 +14,15 @@
     height: 350px;
     background-size: cover;
 
-    @media @tabletC {
+    @media @min {
       height: 200px;
     }
 
-    @media @desktopC {
+    @media @tablet {
+      height: 200px;
+    }
+
+    @media @desktop {
       height: 300px;
     }
 
@@ -32,15 +36,27 @@
 
       position: absolute;
       .cover();
-      padding-top: 100px;
+
+      .centered {
+        .center();
+        width: 100%;
+        padding: 0 25px;
+      }
 
       .title {
 
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-size: 36px;
         color: @white;
+
+        @media @min {
+          .font_size(23);
+        }
+
+        @media @tablet {
+          .font_size(34);
+        }
 
       }
 

@@ -1,7 +1,13 @@
 .page-header  {
 
-  padding: 100px 0 20px;
-  border-bottom: 4px solid rgba(255,255,255,.1);
+	@media @min {
+		padding: 0 0 20px;
+	}	
+	@media @desktop {
+		padding: 100px 0 20px;		
+	}
+  
+  	border-bottom: 4px solid rgba(255,255,255,.1);
 
   h1 {
     color: @gold;
@@ -9,6 +15,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    @media @min {
+    	.font_size(30);
+    }
+    @media @desktop {
+    	.font_size(55);
+    }
   }
 
 }

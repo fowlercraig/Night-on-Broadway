@@ -8,14 +8,28 @@
   }
 
   .partner {
-    border-right: 2px solid rgba(255,255,255,.1);
-    border-bottom: 2px solid rgba(255,255,255,.1);
-    &.last {
-      border-right: none;
+
+    @media @desktop {
+
+      border-right: 2px solid rgba(255,255,255,.1);
+      border-bottom: 2px solid rgba(255,255,255,.1);
+      &.last {
+        border-right: none;
+      }
+      &.bottom {
+        border-bottom: none;
+      }
+
     }
-    &.bottom {
-      border-bottom: none;
+
+    @media @mobileC {
+      width: 50%;
     }
+
+    @media @tabletC {
+      width: 50%;
+    }
+
   }
 
 }
@@ -34,10 +48,18 @@
 
     display: block;
     background: rgba(255,255,255,.1);
-    height: 80px;
-    line-height: 80px;
     color: @white;
     border-radius: 3px;
+
+    @media @min {
+      padding: 10px;
+    }
+
+    @media @tablet {
+      padding: 0;
+      height: 80px;
+      line-height: 80px;
+    }
 
   }
 

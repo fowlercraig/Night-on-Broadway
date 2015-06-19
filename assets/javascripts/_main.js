@@ -4,8 +4,12 @@
 // @codekit-prepend "../bower_components/Selecter/jquery.fs.selecter.js";
 // @codekit-prepend "../bower_components/Tabber/jquery.fs.tabber.js";
 // @codekit-prepend "../bower_components/Wallpaper/jquery.fs.wallpaper.js";
-// @codekit-prepend "../bower_components/Shifter/jquery.fs.shifter.js";
 // @codekit-prepend "../bower_components/Sizer/jquery.fs.sizer.js";
+
+// @codekit-prepend "../bower_components/formstone/dist/js/core.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/mediaquery.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/touch.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/swap.js"
 
 // Other Plugins
 

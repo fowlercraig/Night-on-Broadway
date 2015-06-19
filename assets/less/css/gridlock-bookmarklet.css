@@ -36,6 +36,16 @@
 .text-center {
   text-align: center;
 }
+@media screen and (min-width: 500px) {
+  .show-mobile {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 980px) {
+  .show-mobile {
+    display: none;
+  }
+}
 /*-------------------------------------------
   Bookmarklet
 -------------------------------------------*/

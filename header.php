@@ -17,14 +17,17 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('gridlock main'); ?> data-speed="1.75">
+<body <?php body_class('gridlock main shifter'); ?> data-speed="1.75">
 
-<div id="wrapper">
+<div id="wrapper" class="shifter-page">
 
 <header id="head">
   <nav class="row">
-    <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-9 tablet-6 mobile-3','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
-    <div class="desktop-3 social text-right"><a href="http://instagram.com/bringingbackbroadway">#nightonbroadway</a></div>
+    <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-9 tablet-hide mobile-hide','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
+    <div class="desktop-3 tablet-6 mobile-3 social text-right">
+    	<a href="http://instagram.com/bringingbackbroadway">#nightonbroadway</a>
+    	<span class="target show-mobile" data-swap-target=".toggle">Menu</span>
+    </div>
   </nav>
 </header>
 

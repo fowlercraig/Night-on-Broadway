@@ -14,12 +14,14 @@
   }
 ?>
 
-<div class="activity <?php the_sub_field('width'); ?> tablet-3 mobile-3" style="<?php echo $thumb_bg; ?>">
+<div class="activity <?php the_sub_field('width'); ?> tablet-6 mobile-3" style="<?php echo $thumb_bg; ?>">
   <div class="meta text-center">
-    <div class="row">
-      <div class="desktop-8 tablet-6 mobile-3 centered">
-        <h3 class="title"><?php the_title(); ?></h3>
-        <a href="<?php the_permalink(); ?>" class="button"><?php echo $buttonText; ?></a>
+    <div class="centered">
+      <div class="row">
+        <div class="desktop-8 tablet-6 mobile-3 centered">
+          <h3 class="title"><?php the_title(); ?></h3>
+          <a href="<?php the_permalink(); ?>" class="button"><?php echo $buttonText; ?></a>
+        </div>
       </div>
     </div>
   </div>

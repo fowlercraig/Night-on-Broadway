@@ -1,0 +1,33 @@
+.side {
+
+	&-menu {
+
+		transition: 300ms ease;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 300px;
+		z-index: 99;
+		background: @gold;
+		transform: translate(-100%, 0);
+
+		&.fs-swap-active {
+			transform: translate(0, 0);			
+		}
+
+	}
+
+	&-wrapper {
+		padding: 25px;
+	}
+
+	&-nav {
+		a {
+			display: block;
+			padding: 3px 0;
+			color: @white;
+		}
+	}
+
+}

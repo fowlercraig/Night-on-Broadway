@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
   $("#wrapper").fitVids();
+  //$.shifter();
 
   $('.pswp').appendTo('body');
+
+  $(".target").swap();
 
   // Parallax Headers
 
