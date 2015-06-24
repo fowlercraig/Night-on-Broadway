@@ -2,7 +2,6 @@
 
 	&-menu {
 
-		display: none;
 		transition: 300ms ease;
 		position: fixed;
 		left: 0;
@@ -24,10 +23,24 @@
 	}
 
 	&-nav {
+		padding-top: 50px;
+		position: relative;
 		a {
 			display: block;
 			padding: 3px 0;
 			color: @white;
+			&.show-mobile {
+				display: inline-block;
+				transform: rotate(45deg);
+				position: absolute;
+				top: 0;
+				color: @black25;
+				cursor: pointer;
+				.font_size(24);
+				&:hover {
+					color: @black50;
+				}
+			}
 		}
 	}
 

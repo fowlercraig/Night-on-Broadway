@@ -26,7 +26,7 @@
     <?php wp_nav_menu( array( 'theme_location'=>'main-menu','items_wrap'=> '%3$s','container_class'=>'menu desktop-9 tablet-hide mobile-hide','walker' => new MV_Cleaner_Walker_Nav_Menu() ) ); ?>
     <div class="desktop-3 tablet-6 mobile-3 social text-right">
     	<a href="http://instagram.com/bringingbackbroadway">#nightonbroadway</a>
-    	<span class="target show-mobile" data-swap-target=".toggle">Menu</span>
+    	<span class="target show-mobile toggle_linked" data-swap-target=".toggle" data-swap-linked='.toggle_linked'>Menu</span>
     </div>
   </nav>
 </header>

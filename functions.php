@@ -39,14 +39,14 @@ $settings = array(
 
 'available_scripts' => array(
 'jquery-g'          => array('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js','1.11.1'),
-'scripts'           => array('/assets/javascripts/scripts.min.js'),
+'scripts'           => array('/assets/javascripts/scripts.min.js', '1'),
 ),
 
 'default_scripts'   => array(
 'scripts'),
 
 'available_stylesheets' => array(
-'default'           => array('/assets/css/main.css'),
+'default'           => array('/assets/css/main.css', '1'),
 ),
 
 'default_stylesheets' => array(

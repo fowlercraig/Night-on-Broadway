@@ -46,6 +46,10 @@
     display: none;
   }
 }
+.rotate-45 {
+  position: relative;
+  transform: rotate(45deg);
+}
 /*-------------------------------------------
   Bookmarklet
 -------------------------------------------*/
