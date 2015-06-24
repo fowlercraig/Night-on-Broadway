@@ -5349,6 +5349,16 @@ body.main.page-homepage {
           transition: 300ms ease;
   width: 100%;
 }
+@media screen and (min-width: 300px) {
+  #gallery figure figcaption {
+    display: none;
+  }
+}
+@media screen and (min-width: 980px) {
+  #gallery figure figcaption {
+    display: block;
+  }
+}
 #gallery figure:hover figcaption {
   background: rgba(0, 0, 0, 0.75);
   bottom: 0;
