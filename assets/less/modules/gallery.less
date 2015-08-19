@@ -16,6 +16,15 @@
       color: @white;
       transition: 300ms ease;
       width: 100%;
+
+      @media @min {
+        display: none;
+      }
+
+      @media @desktop {
+        display: block;
+      }
+
     }
 
     &:hover {

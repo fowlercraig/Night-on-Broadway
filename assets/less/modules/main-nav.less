@@ -30,8 +30,16 @@
     letter-spacing: 2px;
 
     .social {
+      .target {
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+      }
       @media @min {
         text-align: left;
+        .target {
+          float: right;
+        }
       }
       @media @tablet {
         text-align: left;
@@ -104,4 +112,21 @@
 
   }
 
+}
+
+@fs-grid-gutter:                  1.0416666666666667%;
+
+.ClassyCountdown {
+  &-wrapper {
+    margin: 0 -@fs-grid-gutter*2 20px;
+    text-align: center;
+    @media @min {
+      margin-top: -40px;
+    }
+    > div {
+      max-width: 23.5% - @fs-grid-gutter;
+      margin: 0 @fs-grid-gutter!important;
+      display: inline-block;
+    }
+  }
 }
